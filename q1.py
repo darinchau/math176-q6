@@ -13,7 +13,7 @@ def q1(data):
     mean_returns = 1/len(S) * sum(map(lambda x: ln(1 + x), hist_returns))
     sigma_returns = sqrt(1/(len(S) - 1) * sum(map(lambda x: (ln(1 + x) - mean_returns) ** 2, hist_returns)))
 
-    return (mean_returns, sigma_returns)
+    return (252 * mean_returns, sqrt(252) * sigma_returns)
 
 GOOG_data = """$90.10
 $89.35
