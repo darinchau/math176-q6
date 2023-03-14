@@ -57,5 +57,6 @@ $145.43
 $144.29
 $143.00"""
 
-print(q1(GOOG_data))
-print(q1(AAPL_data))
+if __name__ == "__main__":
+    print(q1(GOOG_data))
+    print(q1(AAPL_data))
